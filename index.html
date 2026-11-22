@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gut Gyaan with Dr Ravi</title>
+<meta name="description" content="Gut health explained simply in Hindi and English: IBS, acidity, fatty liver, constipation and breathing exercises.">
+<meta name="theme-color" content="#F8D3BD">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Gut Gyaan with Dr Ravi">
+<meta property="og:description" content="Gut and liver health explained simply in Hindi and English: conditions, Indian diet charts, medicine duration and breathing exercises.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body data-lang="both">
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">Gut <b>Gyaan</b></a>
+    <nav aria-label="Main">
+      <a href="#topics">Topics</a>
+      <a href="#diets">Diets</a>
+      <a href="#medicines">Medicines</a>
+      <a href="#breathing">Breathing</a>
+      <a href="#red-flags">Red flags</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button id="lang-both" data-l="both" aria-pressed="true">Both</button>
+      <button id="lang-en" data-l="en" aria-pressed="false">English</button>
+      <button id="lang-hi" data-l="hi" aria-pressed="false">हिंदी</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div id="home">
+<div class="hero">
+  <div class="wrap">
+    <h1><span class="hi" lang="hi">पेट की सेहत की सही जानकारी, आसान भाषा में</span><span class="en">Gut health, explained simply</span></h1>
+    <div class="lede">
+      <span class="en">Simple, evidence-based explanations of 28 stomach, intestine, liver and pancreas conditions: what they are, why they happen, what helps, and when to see a doctor.</span>
+      <span class="hi" lang="hi">पेट, आंत और लिवर की आम बीमारियाँ: क्या हैं, क्यों होती हैं, क्या मदद करता है, और कब डॉक्टर को दिखाना ज़रूरी है।</span>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#topics">Read the topics</a>
+      <a class="btn" href="#diets">Diet charts</a>
+      <a class="btn" href="#medicines">How long to take medicines?</a>
+      <a class="btn" href="https://www.instagram.com/gutgyaan/" target="_blank" rel="noopener">Follow on Instagram</a>
+    </div>
+  </div>
+</div>
+
+
+<section id="topics">
+  <div class="wrap">
+    <p class="kicker">Conditions</p>
+    <h2 class="sec-title"><span class="en">Choose a condition</span><span class="hi" lang="hi">बीमारी चुनें</span></h2>
+    <div class="search"><label for="q" class="en" style="font-size:15px;color:var(--muted)">Search in English or Hindi</label>
+      <input id="q" type="search" placeholder="e.g. hepatitis B, पीलिया, acidity" autocomplete="off"></div>
+    <div id="groups"></div>
+    <p class="empty" id="empty" hidden>No condition matches. Try another word.</p>
+  </div>
+</section>
+<section id="diets">
+  <div class="wrap">
+    <p class="kicker">Diet charts</p>
+    <h2 class="sec-title"><span class="en">Diets for gut and liver conditions</span><span class="hi" lang="hi">पेट और लिवर की बीमारियों के लिए डाइट</span></h2>
+    <p class="en" style="max-width:65ch;margin-top:10px">Practical Indian diet plans in katori and roti measures, with what to eat, what to limit and what to avoid.</p>
+    <div id="dgroups"></div>
+  </div>
+</section>
+<section id="medicines" style="background:var(--peach-soft)">
+  <div class="wrap">
+    <p class="kicker">Medicines</p>
+    <h2 class="sec-title"><span class="en">How long do I take my medicine?</span><span class="hi" lang="hi">दवा कितने समय तक लेनी है?</span></h2>
+    <div class="rule"><span class="en">Never stop a medicine on your own. Some medicines control a disease without curing it, so they must continue even when you feel well.</span>
+    <span class="hi" lang="hi">कोई भी दवा अपने आप बंद न करें। कुछ दवाएं बीमारी को काबू में रखती हैं, ठीक नहीं करतीं — इसलिए ठीक लगने पर भी चलती हैं।</span></div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+<section id="breathing" class="breath">
+  <div class="wrap">
+    <p class="kicker">Breathing guide</p>
+    <h2 class="sec-title"><span class="en">Breathe along</span><span class="hi" lang="hi">साथ में साँस लें</span></h2>
+    <div class="tool">
+      <div class="stage">
+        <svg id="shape" viewBox="0 0 300 300" aria-hidden="true">
+          <rect id="sq" x="40" y="40" width="220" height="220" fill="none" stroke="var(--accent)" stroke-width="5" rx="4"/>
+          <circle id="ring" cx="150" cy="150" r="70" fill="var(--peach)" stroke="var(--accent)" stroke-width="4" style="display:none"/>
+          <circle id="dot" cx="40" cy="260" r="12" fill="var(--accent)"/>
+        </svg>
+        <div class="phase" aria-live="polite">
+          <span class="count" id="count">4</span>
+          <span class="p-en" id="p-en">Press Start</span>
+          <span class="p-hi" id="p-hi" lang="hi">शुरू करें दबाएं</span>
+        </div>
+      </div>
+      <div>
+        <div class="modes" role="group" aria-label="Exercise">
+          <button id="mode-box" aria-pressed="true">Box breathing 4·4·4·4</button>
+          <button id="mode-dia" aria-pressed="false">Diaphragmatic 4·6</button>
+        </div>
+        <div class="howto" id="howto"></div>
+        <div class="cta"><button class="btn primary" id="go">Start</button></div>
+        <p class="rounds" id="rounds">Rounds completed: 0</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="red-flags">
+  <div class="wrap">
+    <p class="kicker">See a doctor</p>
+    <h2 class="sec-title"><span class="en">Symptoms you should never ignore</span><span class="hi" lang="hi">इन लक्षणों को कभी नज़रअंदाज़ न करें</span></h2>
+    <div class="flags">
+      <div class="flag"><span class="en">Vomiting blood, or black / bloody stool</span><span class="hi" lang="hi">खून की उल्टी, काला या खून वाला मल</span></div>
+      <div class="flag"><span class="en">Difficulty swallowing or food sticking</span><span class="hi" lang="hi">निगलने में दिक्कत, खाना अटकना</span></div>
+      <div class="flag"><span class="en">Weight loss without trying</span><span class="hi" lang="hi">बिना कोशिश वज़न घटना</span></div>
+      <div class="flag"><span class="en">Yellow eyes or skin, swelling of the belly or legs</span><span class="hi" lang="hi">आँखें / त्वचा पीली, पेट या पैरों में सूजन</span></div>
+      <div class="flag"><span class="en">Confusion or excessive sleepiness in a liver patient</span><span class="hi" lang="hi">लिवर के मरीज़ में बेहोशी जैसा या भ्रम</span></div>
+      <div class="flag"><span class="en">Severe belly pain that does not settle</span><span class="hi" lang="hi">तेज़ पेट दर्द जो ठीक न हो</span></div>
+      <div class="flag"><span class="en">New bowel symptoms after age 50, or anaemia</span><span class="hi" lang="hi">50 के बाद नए लक्षण, खून की कमी</span></div>
+      <div class="flag"><span class="en">Symptoms that wake you from sleep</span><span class="hi" lang="hi">लक्षण जो नींद से जगा दें</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="about">
+  <div class="wrap">
+    <p class="kicker">About</p>
+    <h2 class="sec-title"><span class="en">About Gut Gyaan</span><span class="hi" lang="hi">गट ज्ञान के बारे में</span></h2>
+    <p><span class="en">Gut Gyaan is a patient-education project by Dr Ravi Kumar, MD, a doctor training in gastroenterology. The aim is simple: help patients and families understand gut and liver problems in their own language, so they can ask better questions and follow treatment with confidence.</span>
+    <span class="hi" lang="hi">गट ज्ञान का उद्देश्य है मरीज़ों और उनके परिवार को पेट और लिवर की बीमारियाँ उनकी अपनी भाषा में समझाना।</span></p>
+    <p><span class="en">New topics are added regularly. Follow on Instagram for short videos and posts.</span>
+    <span class="hi" lang="hi">नए विषय नियमित रूप से जोड़े जाते हैं। छोटे वीडियो के लिए Instagram पर फ़ॉलो करें।</span></p>
+    <div class="cta"><a class="btn primary" href="https://www.instagram.com/gutgyaan/" target="_blank" rel="noopener">Follow on Instagram</a></div>
+  </div>
+</section>
+
+</div>
+<noscript><div class="wrap"><p class="note">Please turn on JavaScript to see the topics and diet charts.</p></div></noscript>
+<div id="detail" class="detail" hidden><div class="wrap" id="detail-body"></div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <p><strong>Disclaimer:</strong> This website is for general health education only. It does not replace a consultation with your doctor, and it is not advice for any individual patient. Do not start or stop any medicine without medical advice.</p>
+    <p lang="hi">यह वेबसाइट केवल सामान्य स्वास्थ्य शिक्षा के लिए है। इलाज के लिए अपने डॉक्टर से मिलें।</p>
+    <p>© 2026 Gut Gyaan · Dr Ravi Kumar, MD</p>
+  </div>
+</footer>
+
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
